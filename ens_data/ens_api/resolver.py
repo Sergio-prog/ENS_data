@@ -56,6 +56,4 @@ class Resolver:
                 if text_record:
                     result[record_name] = text_record
 
-        print(result, type(result))
-
         return result

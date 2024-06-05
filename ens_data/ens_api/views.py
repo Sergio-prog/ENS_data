@@ -47,7 +47,7 @@ def resolve_ens(request, address_or_domain: str):
         raw_ens_node += ".eth"
 
     ens_node = get_ens_node(raw_ens_node)
-    print("0x" + ens_node.hex(), raw_ens_node)
+    # print("0x" + ens_node.hex(), raw_ens_node)
 
     resolver = find_resolver(ens_node)
 
@@ -59,6 +59,5 @@ def resolve_ens(request, address_or_domain: str):
         domain = address_or_domain
 
     records = resolver.get_all_records(ens_node)
-    print(records)
 
     return Response({"ens": domain, "address": address, **records})
