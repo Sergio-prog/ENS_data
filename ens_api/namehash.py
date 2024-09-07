@@ -23,8 +23,10 @@ def sha3(value):
 
 
 # ensure we have the *correct* sha3 installed (keccak)
-assert codecs.encode(keccak_256(b'').digest(),
-                     'hex') == b'c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470'  # noqa
+assert (
+    codecs.encode(keccak_256(b"").digest(), "hex")
+    == b"c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+)  # noqa
 
 
 def _sub_hash(value, label):
@@ -35,21 +37,17 @@ def namehash(name, encoding=None):
     """
     Implementation of the namehash algorithm from EIP137.
     """
-    node = b'\x00' * 32
+    node = b"\x00" * 32
     if name:
         if encoding is None:
             if is_bytes(name):
                 encoded_name = name
             else:
-                encoded_name = codecs.encode(name, 'utf8')
+                encoded_name = codecs.encode(name, "utf8")
         else:
             encoded_name = codecs.encode(name, encoding)
 
-        labels = encoded_name.split(b'.')
+        labels = encoded_name.split(b".")
 
-        return compose(*(
-            functools.partial(_sub_hash, label=label)
-            for label
-            in labels
-        ))(node)
+        return compose(*(functools.partial(_sub_hash, label=label) for label in labels))(node)
     return node

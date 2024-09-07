@@ -4,9 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="043923bc-cf79-4047-a8ab-9eef0c049444" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/resolver.py" beforeDir="false" afterPath="$PROJECT_DIR$/ens_data/ens_api/resolver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ens_data/ens_api/views.py" afterDir="false" />
+    <list default="true" id="043923bc-cf79-4047-a8ab-9eef0c049444" name="Changes" comment="Cleared code">
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ens_api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ens_api/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ens_api/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ens_api/utils/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ens_api/utils/ens.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ens_api/utils/errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/abis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ens_api/abis/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/abis/ens_registry.json" beforeDir="false" afterPath="$PROJECT_DIR$/ens_api/abis/ens_registry.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/abis/public_resolver_abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/ens_api/abis/public_resolver_abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ens_api/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/ens_api/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ens_api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/namehash.py" beforeDir="false" afterPath="$PROJECT_DIR$/ens_api/namehash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/resolver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/ens_api/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ens_api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ens_api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_data/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_data/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_data/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/ens_data/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ens_data/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +53,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Sergio-prog&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Sergio-prog/ENS_data.git&quot;,
+    &quot;accountId&quot;: &quot;14ea691d-ecbf-4c51-990f-5d5d99cf17d7&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -39,11 +81,20 @@
     &quot;Python.ens.executor&quot;: &quot;Run&quot;,
     &quot;Python.manage.executor&quot;: &quot;Run&quot;,
     &quot;Python.namehash.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PythonProjects/ens_data&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PythonProjects\ens_data" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.manage">
     <configuration name="Migrate SQL" type="PythonConfigurationType" factoryName="Python">
       <module name="ens_data" />
@@ -135,14 +186,86 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ens_data" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ens_data/ens_api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ens_data/ens_api/testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testing2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ens_data" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ens_data/ens_api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ens_data/ens_api/testing2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ens_data" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ens_data/ens_api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ens_data/ens_api/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Migrate SQL" />
       <item itemvalue="Python.manage" />
       <item itemvalue="Python.__init__" />
       <item itemvalue="Python.namehash" />
+      <item itemvalue="Python.testing2" />
+      <item itemvalue="Python.testing" />
+      <item itemvalue="Python.views" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.testing2" />
+        <item itemvalue="Python.testing" />
+        <item itemvalue="Python.views" />
         <item itemvalue="Python.__init__" />
         <item itemvalue="Python.namehash" />
       </list>
@@ -172,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717594567930</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Cleared code">
+      <option name="closed" value="true" />
+      <created>1717594594664</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717594594664</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +319,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Cleared code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleared code" />
   </component>
 </project>
