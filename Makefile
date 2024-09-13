@@ -15,5 +15,9 @@ install:
 dev:
 	poetry run python manage.py runserver $(PORT)
 
+up:
+	docker-compose up -d
+
 all: install
 lint: black isort
+prod: up

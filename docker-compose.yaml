@@ -1,0 +1,51 @@
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ens
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+#    env_file:
+#      - .env
+
+  web:
+    container_name: web
+    build: .
+#    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+      - redis
+
+  frontend:
+    container_name: frontend
+    build: ./frontend
+#    volumes:
+#      - ./frontend:/app
+    ports:
+      - 3000:3000
+
+  redis:
+    image: redis:latest
+    container_name: ens_redis_backend
+    restart: unless-stopped
+    ports:
+      - 6379:6379
+    environment:
+      - REDIS_PORT=${REDIS_PORT}
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 60s
+      timeout: 10s
+      retries: 5
+    tty: true
+
+volumes:
+  pg_data:
